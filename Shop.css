@@ -1,0 +1,489 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    
+
+}
+
+
+#nav-bar-id{
+    
+    width:100%;
+    height:100px;
+    background-color:  #e7eafa;
+    padding :20px;
+    position:relative;
+    top:0px;
+
+
+
+}
+
+#logo{
+    width:fit-content;
+    height:fit-content;
+    object-fit: contain;
+    
+    position:relative;
+    left:20px;
+}
+
+#nav-list{
+    display:flex;
+   
+    width:fit-content;
+    height:fit-content;
+    flex-direction:row;
+    list-style-type: none;
+    list-style-position: inside;
+    position:absolute;
+    top:20px;
+    left:50%;
+
+}
+
+#nav-list  li{
+    margin:10px;
+    padding:2px;
+}
+#nav-list  li a {
+    
+    color:#404353;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, monospace;
+    letter-spacing:1px;
+    font-size:20px;
+    text-decoration:none;
+    
+
+}
+
+#products-block{
+    position:relative;
+    top:20px;
+    left:200px;
+    width:1200px;
+    height:fit-content;
+    
+    display:flex;
+    flex-wrap:wrap;
+    flex-basis:fit-content;
+    flex-direction: row;
+    justify-content:space-around;
+    
+    padding:30px;
+    left:20%;
+}
+
+#products-block #product_div
+{
+    border:1px solid grey ;
+    width:fit-content;
+    padding:25px;
+    margin:30px;
+    height:fit-content;
+    position:relative;
+    border-radius:80px;
+}
+
+#products-block #product_div #imgid{
+    width:215px;
+    height:fit-content;
+    
+    
+    border-radius:65px;
+}
+#products-block #product_div #text1{
+    display:block;
+    width:fit-content;
+    height:fit-content;
+   
+    position:relative;
+    top:-1px;
+    left:-2px;
+    font-size:medium;
+    color:#bbb4b3;
+
+}
+#products-block #product_div #text2{
+    color:#3e3f46;
+    -webkit-text-fill-color: #3e3f46;
+    -webkit-text-stroke-width:0px;
+    font-size:27px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing:2px;
+   
+    display:inline=block;
+    width:fit-content;
+    height:fit-content;
+    position:relative;
+    top:10px;
+    left:4px;
+}
+
+#products-block #product_div #rate_img{
+    width:100px;
+    height:38px;
+    
+    padding:10px;
+    display:block;
+    object-fit:cover;
+    object-position:center;
+    position:relative;
+    top:30px;
+    left:-14px;
+}
+#products-block #product_div #price{
+    display:block;
+    
+    
+    width:120px;
+    height:89px;
+    position:relative;
+    bottom:25px;
+    left:110px;
+
+    border-radius:95px;
+
+}
+#sign-up{
+    margin-bottom:5px;
+    width:100%;
+    height:fit-content;
+    position:relative;
+    background-color: #001341;
+    height:150px;
+    padding:50px;
+    top:50px;
+    height:200px;
+   
+}
+
+#sign-up > span{
+    
+    display:block;
+    width:fit-content;
+    height:fit-content;
+    color:#f6f9fb;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, monospace;
+    letter-spacing:1px;
+    font-size:25px;
+    box-sizing: content-box;
+    padding:10px;
+
+}
+#sign-up #text2{
+    color:#667fa2;
+    font-size:medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, monospace;
+    letter-spacing:1px;
+    
+}
+#sign-up #signupform{
+    
+    display: block;
+    width:fit-content;
+    height:fit-content;
+    position:absolute;
+    top:50px;
+    right:150px;
+    border-radius: 20px;
+
+}
+#sign-up #signupform #email-input{
+    width:300px;
+    height:45px;
+    color:#b3b1b3;
+    padding:20px;
+    font-size:medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing:1px;
+    border:none;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#sign-up #signupform #signupbut{
+    border:none;
+    color:#c5f5f4;
+    background-color: #008076;
+    height:100%;
+    margin-left:-1px;
+    position:absolute;
+    top:0px;
+    width:100px;
+}
+
+#foot1
+{
+   
+   width:100%;
+   height:350px;
+   position:relative;
+   top:-10px;
+   padding:60px;
+
+}
+
+#foot1 #logoid{
+    width:fit-content;
+    height:fit-content;
+    object-fit:cover;
+    object-position: center;
+    position:absolute;
+    top:31px;
+    
+
+}
+#foot1 #text1{
+    display:inline-block;
+    color:#393839;
+    font-size:larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, monospace;
+    letter-spacing: 2px;
+    position:relative;
+    top:50px;
+}
+
+#foot1 #text2{
+    display:inline-block;
+    color:#393839;
+    font-size:larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, monospace;
+    letter-spacing: 2px;
+    position:relative;
+    top:20px;
+}
+#foot1 #text2 #text3{
+    color:#aaa9a5;
+    font-size:large;
+}
+#foot1 #text2 #follo-links img{
+    width:100px;
+    height:40px;
+}
+
+#foot1 #about-us{
+    width:250px;
+    height:300px;
+    
+    position:absolute;
+    top:0px;
+    left:50%;
+    padding:20px;
+}
+#foot1 #about{
+    
+    width:100%;
+    height:100%;
+    list-style: none;
+    list-style-position: inside;
+    
+
+}
+
+#foot1 #about li{
+    
+    width:fit-content;
+    height:fit-content;
+  
+    color:#393839;
+    font-size:larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, monospace;
+    letter-spacing: 2px;
+
+    padding:6px;
+    margin:5px;
+
+}
+#foot1 #about li ~ li {
+    
+    width:fit-content;
+    height:fit-content;
+  
+    color:#aaa9a5;
+    font-size:large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, monospace;
+    letter-spacing: 2px;
+
+    padding:6px;
+    margin:5px;
+
+}
+#foot1 #installapp{
+    position:absolute;
+    
+    top:24px;
+    
+    padding:20px;
+    left:75%;
+}
+#foot1 #installapp #text1{
+    position:absolute;
+    top:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

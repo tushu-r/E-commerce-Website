@@ -1,0 +1,587 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    
+
+}
+
+
+#nav-bar-id{
+    
+    width:100%;
+    height:100px;
+    background-color:  #e7eafa;
+    padding :20px;
+    position:relative;
+    top:0px;
+
+
+
+}
+
+#logo{
+    width:fit-content;
+    height:fit-content;
+    object-fit: contain;
+    
+    position:relative;
+    left:20px;
+}
+
+#nav-list{
+    display:flex;
+   
+    width:fit-content;
+    height:fit-content;
+    flex-direction:row;
+    list-style-type: none;
+    list-style-position: inside;
+    position:absolute;
+    top:20px;
+    left:50%;
+
+}
+
+#nav-list  li{
+    margin:10px;
+    padding:2px;
+}
+#nav-list  li a {
+    
+    color:#404353;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, monospace;
+    letter-spacing:1px;
+    font-size:20px;
+    text-decoration:none;
+    
+
+}
+
+#home{
+    
+ 
+    position:relative;
+    
+    
+    width:100%;
+    height:910px;
+    
+    background-image:url(img/hero4.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+#home #home-content{
+    position: relative;
+    
+    top:300px;
+    left:100px;
+    
+    color:#404353;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, monospace;
+    letter-spacing:1px;
+    font-size:20px;
+    text-decoration:none;
+    width:fit-content;
+    height:fit-content;
+
+}
+#home #home-content #first-line{
+    font-size:medium;
+    -webkit-text-fill-color:#404353;
+    -webkit-text-stroke-width:1px;
+
+}
+#home #home-content #s1{
+    color:black;
+    -webkit-text-fill-color:black;
+    -webkit-text-stroke-width:2px;
+    font-size: 34px;
+}
+#home #home-content #s2{
+    font-size: 34px;
+    color:#008077;
+    -webkit-text-fill-color:#008077;
+    -webkit-text-stroke-width:2px;
+}
+
+#home #but-id{
+    
+    background-image: url(img/button.png);
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: -27px -1px;
+    
+    background-color:#e7eafa;
+    width:180px;
+    height:50px;
+
+    position:absolute;
+    top:58%;
+    left:12%;
+
+    border-style: none;
+    font-family: 'Open Sans', 'Helvetica Neue', monospace;
+    letter-spacing: 2px;
+    font-size: 30px;
+    -webkit-text-fill-color:#008077;
+    -webkit-text-stroke-width:1px;
+
+    border:0px solid black;
+}
+
+#feature_delivery{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    flex-basis: fit-content;
+    justify-content: space-between;
+    align-items:center;
+
+    
+    
+    height:fit-content;
+    padding:30px;
+
+
+
+}
+#feature_delivery > div{
+    
+    padding:32px;
+    width:fit-content;
+    object-fit:cover;
+    object-position: center;
+    height:250px;
+    position: relative;
+    border-style:double;
+    border-color:#eae9eb;
+
+}
+#feature_delivery  div img{
+    width:150px;
+    
+    
+    padding:10px;
+    height:fit-content;
+
+    
+
+}
+#feature_delivery #free_shipping #text1{
+    display:inline-block;
+    width:fit-content !important;
+    position:absolute;
+    top:78%;
+    left:15%;
+    color:#46655e;
+    -webkit-text-fill-color: #46655e;
+    -webkit-text-stroke-width:1px;
+    font-size:22px;
+    letter-spacing: 1px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #dfc3cd;
+    padding:7px;
+    text-align: center;
+
+}
+#feature_delivery  #online-order #text2{
+    display:inline-block;
+    
+    position:absolute;
+    top:75% !important;
+    left:7%;
+    width:fit-content !important;
+    color:#246044;
+    -webkit-text-fill-color: #246044;
+    -webkit-text-stroke-width:1px;
+    font-size:22px;
+    letter-spacing: 1px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #b1d0ad;
+    padding:7px;
+    text-align: center;
+
+}
+#feature_delivery #promotions #text4{
+    color:#456d72;
+    -webkit-text-fill-color: #456d72;
+    -webkit-text-stroke-width:1px;
+    font-size:22px;
+    letter-spacing: 1px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #b7bfd9;
+    padding:7px;
+    text-align: center;
+    
+}
+#feature_delivery #save-money #text3{
+    color:#2f6b76;
+    -webkit-text-fill-color: #2f6b76;
+    -webkit-text-stroke-width:1px;
+    font-size:22px;
+    letter-spacing: 1px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #b7cdda;
+    padding:7px;
+    text-align: center;
+
+}
+#feature_delivery  #Happy-sell #text5{
+    color:#32686f;
+    -webkit-text-fill-color: #32686f;
+    -webkit-text-stroke-width:1px;
+    font-size:22px;
+    letter-spacing: 1px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #dec0df;
+    padding:7px;
+    text-align: center;
+
+    
+}
+#feature_delivery #support #text6{
+    color:#186b57;
+    -webkit-text-fill-color:#186b57;
+    -webkit-text-stroke-width:1px;
+    font-size:22px;
+    letter-spacing: 1px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #dad3c5;
+    padding:8px;
+    text-align: center;
+
+}
+
+#feature_delivery div span{
+    display:inline-block;
+    padding:15px;
+    font-size:14px;
+    position:absolute;
+    top:78%;
+    left:15%;
+    text-align: center;
+
+}
+
+#featured-products{
+    
+    width:100%;
+    height:150px;
+    text-align:center;
+    position:relative;
+    
+
+}
+#featured-products #text1{
+    font-size:75px;
+    display: inline-block;
+    position:relative;
+    top:25px;
+    -webkit-text-stroke-fill-color:#090d10;
+    -webkit-text-stroke-width:0px;
+    height: fit-content;
+}
+#featured-products #text2{
+    display: inline-block;
+    position:relative;
+    font-size:20px;
+    position:relative;
+    top:27px;
+    -webkit-text-stroke-fill-color:#9a9f93;
+    -webkit-text-stroke-width: 0px;
+    color: #9a9f93;
+}
+
+#featured-list{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+    
+    width:70%;
+    height:fit-content;
+  
+    margin-top:100px;
+    margin-left:15%;
+    margin-right: 25%;
+    box-sizing: content-box;
+    padding:30px;
+
+}
+#featured-list  div{
+    position:relative;
+    border:1px solid rgb(231, 214, 214) ;
+    border-radius:50px;
+    width:fit-content;
+    padding:20px;
+    margin:20px;
+    height: fit-content;
+    
+}
+#featured-list  div img{
+    width:200px;
+    object-fit: contain;
+    border-radius:50px;
+}
+#featured-list  div #company{
+    
+    width:fit-content;
+    height:fit-content;
+
+    font-size:medium;
+    color:#bbb4b3;
+
+    display:block;
+}
+#featured-list  div #text{
+    color:#3e3f46;
+    -webkit-text-fill-color: #3e3f46;
+    -webkit-text-stroke-width:0px;
+    font-size:medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing:2px;
+}
+#featured-list  div img#img2{
+    width:80px;
+    height:70px;
+}
+#featured-list  div #price{
+    width:90px;
+    height:75px;
+    background: rgb(255, 255, 255);
+    position:relative;
+    left:50px;
+    
+}
+#sign-up{
+    margin-bottom:5px;
+    width:100%;
+    height:fit-content;
+    position:relative;
+    background-color: #001341;
+    height:150px;
+    padding:50px;
+    top:50px;
+    height:200px;
+    
+}
+
+#sign-up > span{
+    
+    display:block;
+    width:fit-content;
+    height:fit-content;
+    color:#f6f9fb;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, monospace;
+    letter-spacing:1px;
+    font-size:25px;
+    box-sizing: content-box;
+    padding:10px;
+
+}
+#sign-up #text2{
+    color:#667fa2;
+    font-size:medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, monospace;
+    letter-spacing:1px;
+    
+}
+#sign-up #signupform{
+    
+    display: block;
+    width:fit-content;
+    height:fit-content;
+    position:absolute;
+    top:50px;
+    right:150px;
+    border-radius: 20px;
+
+}
+#sign-up #signupform #email-input{
+    width:300px;
+    height:45px;
+    color:#b3b1b3;
+    padding:20px;
+    font-size:medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing:1px;
+    border:none;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#sign-up #signupform #signupbut{
+    border:none;
+    color:#c5f5f4;
+    background-color: #008076;
+    height:100%;
+    margin-left:-1px;
+    position:absolute;
+    top:0px;
+    width:100px;
+}
+
+#foot1
+{
+   
+   width:100%;
+   height:350px;
+   position:relative;
+   top:-10px;
+   padding:60px;
+
+}
+
+#foot1 #logoid{
+    width:fit-content;
+    height:fit-content;
+    object-fit:cover;
+    object-position: center;
+    position:absolute;
+    top:31px;
+    
+
+}
+#foot1 #text1{
+    display:inline-block;
+    color:#393839;
+    font-size:larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, monospace;
+    letter-spacing: 2px;
+    position:relative;
+    top:50px;
+}
+
+#foot1 #text2{
+    display:inline-block;
+    color:#393839;
+    font-size:larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, monospace;
+    letter-spacing: 2px;
+    position:relative;
+    top:20px;
+}
+#foot1 #text2 #text3{
+    color:#aaa9a5;
+    font-size:large;
+}
+#foot1 #text2 #follo-links img{
+    width:100px;
+    height:40px;
+}
+
+#foot1 #about-us{
+    width:250px;
+    height:300px;
+    
+    position:absolute;
+    top:0px;
+    left:50%;
+    padding:20px;
+}
+#foot1 #about{
+    
+    width:100%;
+    height:100%;
+    list-style: none;
+    list-style-position: inside;
+    
+
+}
+
+#foot1 #about li{
+    
+    width:fit-content;
+    height:fit-content;
+  
+    color:#393839;
+    font-size:larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, monospace;
+    letter-spacing: 2px;
+
+    padding:6px;
+    margin:5px;
+
+}
+#foot1 #about li ~ li {
+    
+    width:fit-content;
+    height:fit-content;
+  
+    color:#aaa9a5;
+    font-size:large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, monospace;
+    letter-spacing: 2px;
+
+    padding:6px;
+    margin:5px;
+
+}
+#foot1 #installapp{
+    position:absolute;
+    
+    top:24px;
+    
+    padding:20px;
+    left:75%;
+}
+#foot1 #installapp #text1{
+    position:absolute;
+    top:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

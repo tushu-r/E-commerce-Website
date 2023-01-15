@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="Shop.css">
+    </head>
+
+
+<body>
+    <div class="nav-bar" id="nav-bar-id">
+        <div id="logo">
+        <a href="file:///C:/Users/joece/PycharmProjects/HTML,CSS,JS%20PROJECTS/E-COMMERCE%20WEBSITE/E-COMMERCE.html"> <img src="img/logo.png" >  </a> ;
+        </div>
+
+       <ul id="nav-list">
+            <li>
+                <a href="#nav-bar-id">HOME</a>
+            </li>
+            <li>
+                <a href="Shop.html">SHOP</a>
+            </li>
+            <li>
+                <a href="#nav-bar-id">BLOG</a>
+            </li>
+            <li>
+                <a href="#about-us">ABOUT</a>
+            </li>
+            <li>
+                <a href="#about-us">CONTACT</a>
+            </li>
+            <li>
+                <a href="#nav-bar-id"><img src="img/bag.png" width="40px" height="20px"></a>
+            </li>
+
+       </ul>
+
+
+    </div>
+
+<div id="products-block">
+
+</div>
+
+<script>
+    let img_arr = ["f1.jpg","f2.jpg","f3.jpg","f4.jpg","f5.jpg","f6.jpg"
+,"f7.jpg","f8.jpg","n1.jpg","n2.jpg","n3.jpg","n4.jpg","n5.jpg","n6.jpg","n7.jpg","n8.jpg"];
+
+    for(let i = 1 ; i< img_arr.length ; i++)
+    {
+        create_product(i,img_arr) ;
+    }
+   
+  function create_product(i,img_arr)
+  {
+           
+  
+            var t = document.createElement("div") ;
+            t.id="product_div";
+            t.setAttribute("class" ,"class1");
+        
+            var x = document.createElement("img");
+            let o = "img/products/".concat(img_arr[i-1]) ;
+            
+            
+            x.setAttribute("src",o);
+            x.id="imgid";
+            
+            
+            
+            var text1 = document.createElement("span") ;
+            text1.id="text1";
+
+            var text2 = document.createElement("span") ;
+            text2.id="text2";
+
+            var rating = document.createElement("img");
+            rating.id="rate_img" ;
+            rating.setAttribute("src","img/rate2.png") ;
+
+            var price = document.createElement("img") ;
+            price.id = "price" ;
+            price.setAttribute("src","img/price-tag.png") ;
+
+            text1.innerText = "ADIDAS" ;
+            text2.innerText ="MEN'S T-SHIRTS" ; 
+
+        
+            
+            t.appendChild(x);
+            x.insertAdjacentElement("afterend",text1);
+            text1.insertAdjacentElement("afterend",text2);
+            text2.insertAdjacentElement("afterend",rating);
+            rating.insertAdjacentElement("afterend",price);
+
+
+            document.getElementById("products-block").appendChild(t);
+     
+          
+    
+
+            t.onmouseover = func1 ;
+            t.onmouseout = func2 ;
+
+            function func1(){
+                        t.style="box-shadow:0 0 7px inset;";
+                    }
+
+                        
+            function func2(){
+                        t.style="box-shadow:0 0 0px inset;";
+                    }
+
+
+                    
+
+        
+} 
+
+    let r = document.getElementsByClassName("class1") ;
+        for(let g = 0 ; g < r.length ; g++) 
+        {
+            r[g].onclick = func;
+            function func()
+            {
+                let k =  r[g].children;
+
+                let u  =  k.namedItem("text2");
+                let p = u.innerText ;
+                localStorage.setItem("text2",p);
+                console.log(localStorage.getItem("text2") );
+                
+                
+                
+                k = k.namedItem("imgid").getAttribute("src") ;
+                console.log(k);
+                
+               
+                localStorage.setItem("img",k);
+                window.open("file:///C:/Users/joece/PycharmProjects/HTML,CSS,JS%20PROJECTS/E-COMMERCE%20WEBSITE/BUY.html","_self");
+            }
+
+
+
+        }
+
+       
+
+
+    
+
+</script>
+<div id="sign-up">
+    <span id="text1">
+        Sign Up For NewsLetters
+    </span>
+    <span id="text2">
+        Get E-mail updates about our latest shop and special offers
+    </span>
+    <form id="signupform">
+        <input id="email-input" type="email" placeholder="YOUR EMAIL ADDRESS PLEASE" >
+       <button type="submit" id="signupbut" >SIGNUP</button>
+    </form>
+    
+    <script>
+        var x = document.getElementById('email-input');
+        x.onfocus = func1 ;
+        var t = document.getElementById('signupbut');
+        t.onmouseover = func2 ;
+        t.onmouseout = func3 ;
+
+        function func1(){
+            x.style ="border-style:none;color:black,font-size:20px;font-family:cursive;box-shadow:-1px 1px 1px grey;"
+
+        }
+        function func2(){
+                t.style = "box-shadow:1px 1px 2px grey;";
+
+        }
+        function func3(){
+            t.style="box-shadow:none;";
+        }
+   
+
+
+    </script>
+    
+</div>
+<br>
+<br>
+<br>
+
+
+<div id="foot1">
+    <img src="img/logo.png" id="logoid">
+    <br>
+    <br>
+    <span id="text1">
+        Contact:
+    </span>
+    <br> <br><br>
+    <span id="text2">
+     ADDRESS:<span id="text3">562 WELLINGTON ROAD STREET SAN FRANCISCO</span><br>
+     PONE<span id="text3">+01222365/(+91)0123456987</span><br>
+     HOURS:<span id="text3">10:00-18:00,MON-SAT</span><br>
+     <br>
+     <br>
+      <span id="folow-us">
+        FOLLOW US
+      </span>
+      <br>
+      <span id="follo-links">
+        <img src="img/f1.jpg" >
+      </span>
+    </span>
+
+    <div id="about-us">
+        <ul id="about">
+            <li>
+                ABOUT-US
+            </li>
+            <li>
+                Delivery Information
+            </li>
+            <li>
+                Privacy-Policy
+            </li>
+            <li>
+                Terms-And-Conditions
+            </li>
+            <li>
+                Contac-us
+            </li>
+        </ul>
+    </div>
+    <div id="installapp">
+        <span id="text1">INSTALL-APP</span>
+        <br>
+        <span id="text2">From App Store or Google Play</span>
+        <br><br>
+        <img src="img/pay/app.jpg" ><img src="img/pay/play.jpg">
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
